@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta charset="utf-8" />
+    <title>实战盒子模型与弹性盒模型（新版）</title>
+    <link href="css/newstyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="content">
+        <h1>一、正常盒子与怪异盒子的对比。。。</h1>
+        <br/>
+        <div class="outer">
+            <div class="inner">
+                <h3>正常盒子</h3>
+            </div>
+        </div>
+        <p>上面的这两个盒子长宽一样，而外面的盒子因为多了padding值，所以，盒子被撑大了40px。现在外面的盒子是340的长和240的宽～～～</p>
+        <div class="str_out">
+            <div class="str_inner">
+                <h3>怪异盒子</h3>
+            </div>
+        </div>
+        <p>这个为怪异盒子，设置的长宽跟上面的盒子是一样的。但设置的padding把盒子的内容进行压缩。</p>
+        <br />
+        <h1>二、侧轴对齐</h1>
+        <br />
+        <div class="box">
+            <div>
+                <h3>flex-start</h3></div>
+            <div>
+                <h3>flex-end</h3></div>
+            <div>
+                <h3>center</h3></div>
+            <div>
+                <h3>baseline</h3></div>
+            <div>
+                <h3>stretch</h3></div>
+        </div>
+        <br />
+        <h1>三、主轴对齐</h1>
+        <br />
+        <div class="ma_box">
+            <div>
+                <h3>flex-start</h3></div>
+            <div>
+                <h3>flex-end</h3></div>
+            <div>
+                <h3>center</h3></div>
+            <div>
+                <h3>baseline</h3></div>
+            <div>
+                <h3>stretch</h3></div>
+        </div>
+    </div>
+    <div id="right"></div>
+    <div id="left"></div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta charset="utf-8" />
+    <title>实战盒子模型与弹性盒模型（整体排版用的旧版盒子模型）</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!-- 整个页面采用了旧版弹性盒子的排版方式，header和footer占了1，而中间的page占了10 -->
+    <div id="header">
+        <h1>我是Header</h1>
+    </div>
+    <!-- 整个page运用了弹性盒子的排序功能以及按比例填充功能 -->
+    <div id="page">
+        <!-- middle模块，内包含正常盒子与怪异盒子的对比，一样的高度宽度却是不一样的 -->
+        <div id="middle">
+            <h1>正常盒子与怪异盒子的对比(盒子一排在了中间)</h1>
+            <div class="ordinary">
+                <div class="in"><h3>我是正常盒子，中间灰色这一块就是内容区域，是css中设置的高和宽，而外面的整个盒子则是加上了设置的padding值，所以padding会撑大外面的盒子。</h3></div>
+            </div>
+            <div class="strange">
+                <div class="in_str"><h3>我是怪异盒子，中间这一块灰色的就是内容区域，由于设置了padding值，外部盒子不变，所以内容收到了挤压。这种盒子模型就不会使得外部排版变形。</h3></div>
+            </div>
+        </div>
+        <div id="sidebar-left">
+            <h3>分栏（盒子二排在了第一）</h3>
+            <p>
+                实战盒子模型与弹性盒模型，如果时间不充裕直接按照老师课上
+                讲解的例子做一个一模一样的就可以，如果时间充裕可以横向扩
+                展做实战。 补充说明，需完成以下功能： 1.正常盒子与怪异盒
+                子对比 2.弹性盒子水平分栏，垂直分栏，排序(flex)，cloumn分
+                栏 3.旧版弹性盒子居中布局 4.美观程度实战盒子模型与弹性盒模
+                型，如果时间不充裕直接按照老师课上讲解的例子做一个一模一样的
+                就可以，如果时间充裕可以横向扩展做实战。 补充说明，需完成以下
+                	功能： 1.正常盒子与怪异盒子对比 2.弹性盒子水平分栏，垂
+                	直分栏，排序(flex)，cloumn分栏 3.旧版弹性盒子居中布局 4.美观程度
+            </p>
+        </div>
+        <div id="sidebar-right">
+        <!-- 此处时旧版弹性盒子的居中处理 -->
+            <h3>旧版弹性盒子居中处理（盒子三排在了第三）</h3>
+            <div class="outer">
+            	<div class="inner"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <h1>我是footer</h1></div>
+</body>
+
+</html>

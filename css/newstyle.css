@@ -1,0 +1,170 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     width: 100%;
+     display: -webkit-flex;
+     display: flex;
+     background-color: #d8ece0;
+ }
+ /*页面的三大布局，左中右，用flex伸缩来做的，默认是水平方向。同时改变了三块的顺序*/
+ 
+ #left {
+     -webkit-flex: 1;
+     flex: 1;
+     -webkit-order: 1;
+     order: 1;
+ }
+ 
+ #content {
+     -webkit-flex: 4;
+     flex: 4;
+     background-color: #b3ddeb;
+     -webkit-order: 2;
+     order: 2;
+     padding: 20px;
+ }
+ 
+ #right {
+     -webkit-flex: 1;
+     flex: 1;
+     -webkit-order: 3;
+     order: 3;
+ }
+ /*正常盒子和怪异盒子*/
+ 
+ .outer {
+     -webkit-box-sizing: content-box;
+     box-sizing: content-box;
+     width: 300px;
+     height: 200px;
+     padding: 20px;
+     background-color: #f1dd86;
+ }
+ 
+ .inner {
+     -webkit-box-sizing: content-box;
+     box-sizing: content-box;
+     width: 300px;
+     height: 200px;
+     background-color: #e16c64;
+ }
+ 
+ .str_out {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     width: 300px;
+     height: 200px;
+     padding: 20px;
+     background-color: #f6c200;
+ }
+ 
+ .str_inner {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     width: 260px;
+     height: 160px;
+     background-color: #bf5353;
+ }
+ 
+ p {
+     margin: 15px;
+ }
+ /*侧轴对齐部分*/
+ 
+ .box {
+     display: -webkit-flex;
+     display: flex;
+     height: 500px;
+     background-color: #d4c4ce;
+     /*这下面的伸缩属性没有太理解*/
+     -webkit-flex-flow: row wrap;
+     flex-flow: row wrap;
+     -webkit-align-items: end;
+     align-items: end;
+ }
+ 
+ .box>div {
+     width: 100px;
+     min-height: 100px;
+     border 1px solid #ccc;
+     corlor: #fff;
+     text-align: center;
+ }
+ 
+ .box div:nth-child(1) {
+     background-color: #305ed5;
+     line-height: 50px;
+     -webkit-align-self: flex-start;
+     align-self: flex-start;
+ }
+ 
+ .box div:nth-child(2) {
+     background-color: #eeccc2;
+     line-height: 80px;
+     -webkit-align-self: flex-end;
+     align-self: flex-end;
+ }
+ 
+ .box div:nth-child(3) {
+     background-color: #3f8514;
+     line-height: 100px;
+     -webkit-align-self: center;
+     align-self: center;
+ }
+ 
+ .box div:nth-child(4) {
+     background-color: #e6b710;
+     line-height: 20px;
+     -webkit-align-self: baseline;
+     align-self: baseline;
+ }
+ 
+ .box div:nth-child(5) {
+     background-color: #e67716;
+     -webkit-align-self: stretch;
+     align-self: stretch;
+ }
+ /*主轴对齐部分*/
+ 
+ .ma_box {
+     display: -webkit-flex;
+     display: flex;
+     height: 500px;
+     background-color: #d4c4ce;
+     justify-content: space-between;
+ }
+ 
+ .ma_box>div {
+     width: 100px;
+     min-height: 100px;
+     border 1px solid #ccc;
+     corlor: #fff;
+     text-align: center;
+ }
+ 
+ .ma_box div:nth-child(1) {
+     background-color: #305ed5;
+     line-height: 50px;
+ }
+ 
+ .ma_box div:nth-child(2) {
+     background-color: #eeccc2;
+     line-height: 80px;
+ }
+ 
+ .ma_box div:nth-child(3) {
+     background-color: #3f8514;
+     line-height: 100px;
+ }
+ 
+ .ma_box div:nth-child(4) {
+     background-color: #e6b710;
+     line-height: 20px;
+ }
+ 
+ .ma_box div:nth-child(5) {
+     background-color: #e67716;
+ }

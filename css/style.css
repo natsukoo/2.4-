@@ -1,0 +1,120 @@
+* {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    body {
+        display: -moz-box;
+        display: -webkit-box;
+        display: box;
+        -webkit-box-orient: vertical;
+        box-orient: vertical;
+        /*垂直排列，然后用弹性盒子占满整个页面*/
+        width: 100%;
+    }
+    
+    #header,
+    #footer {
+        width: 100%;
+        background-color: #eee;
+        padding: 10px;
+        -webkit-box-flex: 1;
+        box-flex: 1;
+    }
+    
+    #page {
+        width: 100%;
+        display: -webkit-box;
+        display: box;
+        -webkit-box-flex: 10;
+        box-flex: 10;
+    }
+    
+    #middle {
+        -webkit-box-flex: 3;
+        box-flex: 3;
+        -webkit-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+        background-color: #ccc;
+        padding: 10px;
+    }
+    
+    .ordinary {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        background-color: green;
+    }
+    .in{
+        width: 300px;
+        height: 200px;
+        padding: 0;
+        background-color: #888;
+    }
+    .strange {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        background-color: red;
+        display: inline-block;
+    }
+    .in_str{
+        width: 260px;
+        height: 160px;
+        background-color: gray;
+    }
+    
+    #sidebar-left {
+        -webkit-box-flex: 1;
+        box-flex: 1;
+        -webkit-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+        background-color: #eeffcc;
+        padding: 10px;
+    }
+    #sidebar-left p{
+		-webkit-column-count:2;
+		column-count:2;
+		-webkit-column-rule:0.2em dashed #ccc;
+		column-rule:0.2em dashed #ccc;
+		width: 200px;
+    }
+    #sidebar-right {
+        -webkit-box-flex: 2;
+        box-flex: 2;
+        -webkit-box-ordinal-group: 3;
+        box-ordinal-group: 3;
+        background-color: #993322;
+        padding: 10px;
+    }
+
+    .outer{
+
+        display: -webkit-box;
+        display: box;
+    	width: 200px;
+    	height: 200px;
+    	background-color: orange;
+    	-webkit-orient:horizontal;
+    	-webkit-box-align:center;
+    	box-align:center;
+    	-webkit-box-pack:center;
+    	box-pack:center;
+
+    
+    }
+    .inner{
+    	width: 100px;
+    	height: 100px;
+    	background-color: gray;	
+    }
